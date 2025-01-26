@@ -11,7 +11,7 @@ public:
     virtual string operation() const = 0;
 };
 
-// Concrete Component - the basic ice cream class.
+// Concrete Component - the basic robot class.
 class BasicRobot : public Robot {
 public:
     string goTo() const override
@@ -101,15 +101,15 @@ public:
 
 int main()
 {
-    // Create a vanilla ice cream
+    // Create a basic robot
     Robot* simplerobot = new BasicRobot();
     std::cout << "Usage of simple robot: " << simplerobot->goTo()<<endl
          << "Operation: " << simplerobot->operation()
          << endl << endl;
 
-    // Wrap it with camera temperature
+    // Wrap it with camera 
     Robot* camerarobot = new CameraRobot(simplerobot);
-    std::cout << "Usage of camera robot: " << camerarobot->goTo()<<endl
+    cout << "Usage of camera robot: " << camerarobot->goTo()<<endl
          << "Operation: " << camerarobot->operation()
          << endl << endl;
          
@@ -119,15 +119,15 @@ int main()
          << "Operation: " << temprobot->operation()
          << endl << endl;
          
-         // Wrap it with camera Decorator
+         // Wrap it with sound Decorator
     Robot* sondrobot = new SoundRobot(simplerobot);
-    std::cout << "Usage of camera robot: " << sondrobot->goTo()<<endl
+    cout << "Usage of camera robot: " << sondrobot->goTo()<<endl
          << "Operation: " << sondrobot->operation()
          << endl << endl;
          
          //Wrapping with all available decorators at once
     Robot* multirobot = new TemperatureRobot(new SoundRobot(new CameraRobot(new BasicRobot)));
-    std::cout << "Usage of multi robot: " << multirobot->goTo()<<endl
+    cout << "Usage of multi robot: " << multirobot->goTo()<<endl
          << "Operation: " << multirobot->operation()
          << endl;
 
