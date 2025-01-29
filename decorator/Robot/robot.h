@@ -5,7 +5,7 @@
 
 using namespace std;
 
-// Component interface - defines the basic robot operations
+/// @brief Robot class interface
 class Robot {
 public:
     virtual string goTo() const = 0;

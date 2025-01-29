@@ -23,19 +23,19 @@ int main()
          << "Operation: " << camerarobot->operation()
          << endl << endl;
          
-         // Wrap it with temperature Decorator
+     // Wrap it with temperature Decorator
     Robot* temprobot = new TemperatureRobot(simplerobot);
     cout << "Usage of camera robot: " << temprobot->goTo()<<endl
          << "Operation: " << temprobot->operation()
          << endl << endl;
          
-         // Wrap it with sound Decorator
+     // Wrap it with sound Decorator
     Robot* sondrobot = new SoundRobot(simplerobot);
     cout << "Usage of camera robot: " << sondrobot->goTo()<<endl
          << "Operation: " << sondrobot->operation()
          << endl << endl;
          
-         //Wrapping with all available decorators at once
+     //Wrapping with all available decorators at once
     Robot* multirobot = new TemperatureRobot(new SoundRobot(new CameraRobot(new BasicRobot)));
     cout << "Usage of multi robot: " << multirobot->goTo()<<endl
          << "Operation: " << multirobot->operation()
