@@ -25,13 +25,13 @@ int main()
          
      // Wrap it with temperature Decorator
     Robot* temprobot = new TemperatureRobot(simplerobot);
-    cout << "Usage of camera robot: " << temprobot->goTo()<<endl
+    cout << "Usage of temperature robot: " << temprobot->goTo()<<endl
          << "Operation: " << temprobot->operation()
          << endl << endl;
          
      // Wrap it with sound Decorator
     Robot* sondrobot = new SoundRobot(simplerobot);
-    cout << "Usage of camera robot: " << sondrobot->goTo()<<endl
+    cout << "Usage of sound robot: " << sondrobot->goTo()<<endl
          << "Operation: " << sondrobot->operation()
          << endl << endl;
          
