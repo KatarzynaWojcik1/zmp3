@@ -2,9 +2,6 @@
 
 This project demonstrates the Decorator design pattern using a Robot example. The Decorator pattern allows behavior to be added to an individual object, dynamically, without affecting the behavior of other objects from the same class.
 
-## Project Structure
-
-
 ## Classes
 
 ### Robot
