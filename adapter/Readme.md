@@ -67,3 +67,9 @@ cd Debug
 ```
 ./RobotProject
 ```
+6. The expected output
+```
+Stary robot poszedl do: 2, 4
+Nowy robot poszedl do: 4exp(2)
+Stary robot poszedl do: 4exp(63)
+```
