@@ -1,9 +1,14 @@
-// #include <iostream>
-// #include <string>
-// #include "oldrobot.cpp"
-#include "../main.cpp"
+#pragma once
 
+#include <iostream>
+#include <string>
+
+/// @brief Old robot class
+/// @details This class is used to represent the old robot
 class OldRobot{
 public:
-    void goTo(double deg, double dist);
+    /// @brief  Function to move the robot to a specific location
+    /// @param x
+    /// @param y
+    void goTo(double x, double y);
 };
